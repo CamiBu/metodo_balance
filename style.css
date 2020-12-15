@@ -1,10 +1,5 @@
 @charset "UTF-8";
-body {
-  font-family: "Lato", sans-serif;
-  -webkit-transition: background-color .5s;
-  transition: background-color .5s;
-}
-
+/*-------------------------------Navegador----------------------------- */
 .imagen-logo-nav {
   height: 100px;
   margin-top: 0;
@@ -34,49 +29,6 @@ body {
   color: white;
 }
 
-.subtitulo--estudio {
-  color: #86bbb9;
-}
-
-.texto--estudio {
-  font-size: 12px;
-}
-
-.multimediaEstudio {
-  width: 100%;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  margin: auto;
-  overflow: auto;
-  padding: 5px;
-}
-
-.imagen--estudio {
-  height: 300px;
-  width: 400px;
-  float: left;
-  margin: 3px;
-  padding: 5px;
-}
-
-.mapaEstudio {
-  margin: 3px;
-  padding: 5px;
-}
-
-.slide--estudio {
-  height: 500px;
-  width: 100%;
-}
-
 #link-nav {
   margin-right: 100px;
   margin-left: 100px;
@@ -84,50 +36,7 @@ body {
   font-size: 20px;
 }
 
-.imagen__principal--index {
-  width: 100%;
-}
-
-.main__titulo--estudio {
-  text-align: center;
-  font-family: 'Major Mono Display', monospace;
-}
-
-.titulo--estudio {
-  font-size: 30px;
-  background-color: #86bbb9;
-  color: white;
-  margin: 15px;
-  padding: 5px;
-}
-
-.imagenEstudio {
-  width: 100%;
-}
-
 /*-------------------------------Página index----------------------------- */
-h2 {
-  font-size: 30px;
-  text-align: center;
-  font-family: Quicksand-Bold;
-  margin-top: 20px;
-}
-
-.main__parrafo--metodoBalance {
-  text-align: left;
-  font-size: 15px;
-  font-family: 'Major Mono Display', monospace;
-  font-weight: lighter;
-  margin-left: 20px;
-  margin-right: 20px;
-}
-
-body {
-  margin: 0;
-  padding: 0;
-  background-color: #ecdaecc7;
-}
-
 /* Videos-index-flexbox*/
 .main__media--videosIndex {
   padding: 1px;
@@ -136,11 +45,13 @@ body {
       -ms-flex-pack: center;
           justify-content: center;
   width: 100%;
+  -ms-flex-line-pack: center;
+      align-content: center;
 }
 
 .media__video {
-  padding: 1em;
-  margin: 1em;
+  padding: 5px;
+  margin: 30px;
   float: left;
   -webkit-box-shadow: 5px 10px 18px #888888;
           box-shadow: 5px 10px 18px #888888;
@@ -148,14 +59,8 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-}
-
-.iconos {
-  padding: 1px;
-  overflow: hidden;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
 }
 
 .dibujos {
@@ -264,33 +169,20 @@ body {
   width: 100%;
 }
 
+.main__parrafo--clases {
+  font-size: 15px;
+  text-align: center;
+  font-family: 'Major Mono Display', monospace;
+  margin-top: 20px;
+  margin: 20px;
+}
+
 .main__titulo--reapertura {
   font-size: 27px;
   text-align: center;
   font-family: 'Major Mono Display', monospace;
   margin-top: 20px;
-}
-
-.main__titulo--contacto {
-  font-size: 27px;
-  text-align: center;
-  font-family: 'Major Mono Display', monospace;
-  margin-top: 20px;
-  margin-bottom: 20px;
   color: #5F9EA0;
-}
-
-.botonContacto {
-  background-color: #5F9EA0;
-  border: none;
-  color: white;
-  padding: 10px 20px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  margin: 4px 2px;
-  cursor: pointer;
-  border-radius: 12px;
 }
 
 .botonera_formulario {
@@ -387,14 +279,18 @@ body {
   grid-row: 4 / 3;
 }
 
-.textoFooterClases {
-  text-align: center;
-  font-family: Quicksand-Light;
+.card-group {
+  width: 100%;
+}
+
+.card-text {
+  font-family: 'Major Mono Display', monospace;
   font-size: 10px;
 }
 
-.card-group {
-  width: 100%;
+.card-title {
+  font-family: 'Major Mono Display', monospace;
+  font-size: 15px;
 }
 
 .main__titulo--profesoras {
@@ -407,6 +303,23 @@ body {
 }
 
 /*-------------------------------Página estudio----------------------------- */
+.main__titulo--estudio {
+  text-align: center;
+  font-family: 'Major Mono Display', monospace;
+}
+
+.titulo--estudio {
+  font-size: 30px;
+  background-color: #86bbb9;
+  color: white;
+  margin: 15px;
+  padding: 5px;
+}
+
+.imagenEstudio {
+  width: 100%;
+}
+
 .main__imagenes--estudio {
   padding: 1px;
   overflow: hidden;
@@ -414,78 +327,52 @@ body {
   height: 363px;
 }
 
-.main__imagenes--bienvenida {
-  padding: 1em;
-  margin: 1em;
-  float: left;
-  wigth: 564px;
-  heigh: 363px;
+.subtitulo--estudio {
+  color: #86bbb9;
 }
 
-.main__imagenes--bienvenida2 {
-  padding: 1em;
-  margin: 1em;
-  float: right;
-  width: 564px;
-  height: 363px;
+.texto--estudio {
+  font-size: 12px;
 }
 
-.main__imagenes--bienvenida {
-  color: #48D1CC;
-  background-color: #696969;
-}
-
-.main__imagenes--bienvenida2 {
-  background-color: #48D1CC;
-  color: #5F9EA0;
-}
-
-.main__parrafo--estudio {
-  color: #696969;
-  background-color: #5F9EA0;
-}
-
-/* Footer */
-.grad {
-  background-image: -webkit-gradient(linear, right top, left top, from(white), to(LightGrey));
-  background-image: linear-gradient(to left, white, LightGrey);
-}
-
-#logoContent {
-  font-size: 10px;
-  font-family: Quicksand-Light;
-  font-style: italic;
-  text-align: center;
-}
-
-#imagenLogo {
-  display: block;
-  margin: auto;
-  height: 100px;
-}
-
-.textoFooter {
-  text-align: center;
-  font-family: Quicksand-Light;
-  font-size: 10px;
-}
-
-form {
-  font-size: small;
-  font-family: 'Major Mono Display', monospace;
-  justify-items: center;
+.multimediaEstudio {
   width: 100%;
-  height: 500px;
-  padding: 10px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  margin: auto;
+  overflow: auto;
+  padding: 5px;
 }
 
-.main__texto--contacto {
-  font-size: 18px;
-  text-align: center;
+.imagen--estudio {
+  height: 300px;
+  width: 400px;
+  float: left;
+  margin: 3px;
+  padding: 5px;
+}
+
+.mapaEstudio {
+  margin: 3px;
+  padding: 5px;
+}
+
+/*-------------------------------Página metodo----------------------------- */
+#carouselClases {
+  width: 100%;
+}
+
+.textoCarousel {
   font-family: 'Major Mono Display', monospace;
-  margin: 20px;
   background-color: #5f9ea08a;
-  color: white;
 }
 
 .tituloMetodo {
@@ -515,12 +402,70 @@ main.metodo {
   margin: 10px;
 }
 
-.carouselClases {
-  width: 100%;
+/*-------------------------------Página contacto----------------------------- */
+.main__titulo--contacto {
+  font-size: 27px;
+  text-align: center;
+  font-family: 'Major Mono Display', monospace;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  color: #5F9EA0;
 }
 
-.textoCarousel {
+.botonContacto {
+  background-color: #5F9EA0;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 12px;
+}
+
+form {
+  font-size: small;
   font-family: 'Major Mono Display', monospace;
+  justify-items: center;
+  width: 100%;
+  height: 500px;
+  padding: 10px;
+}
+
+.main__texto--contacto {
+  font-size: 18px;
+  text-align: center;
+  font-family: 'Major Mono Display', monospace;
+  margin: 20px;
   background-color: #5f9ea08a;
+  color: white;
+}
+
+/*-------------------------------Footer----------------------------- */
+#logoContent {
+  font-size: 10px;
+  font-family: Quicksand-Light;
+  font-style: italic;
+  text-align: center;
+}
+
+#imagenLogo {
+  display: block;
+  margin: auto;
+  height: 100px;
+}
+
+.textoFooter {
+  text-align: center;
+  font-family: Quicksand-Light;
+  font-size: 10px;
+}
+
+.textoFooterClases {
+  text-align: center;
+  font-family: Quicksand-Light;
+  font-size: 10px;
 }
 /*# sourceMappingURL=style.css.map */
